@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.temperaturaproject;
+
+/**
+ *
+ * @author Usuário
+ */
+
+public class TemperaturaProject {
+    public static void main(String[] args) {
+        // Temperatura em graus Celcius
+        double celsius = 18.0;
+
+        double fahrenheit;
+        double kelvin;
+        boolean isFreezing;
+        char degreeSymbol = '°';
+
+        // Fahrenheit
+        fahrenheit = (celsius * 5/9) + 32;
+
+        // Kelvin
+        kelvin = celsius + 273.15;
+
+        // Para verificar se a temperatura está abaixo de zero graus Celsius
+        isFreezing = celsius < 0;
+
+        System.out.println(celsius + degreeSymbol + "C equivale a:");
+        System.out.println(String.format("%.2f", fahrenheit) + degreeSymbol + "F");
+        System.out.println(String.format("%.2f", kelvin) + "K");
+        System.out.println("Está congelando? " + isFreezing);
+        // Meu nome é Melissa Celentano, fiz este projeto no dia 18/05/2025, adicionei algumas tags, como boolean is freezing para indicar se stá congelando, char para declarar a variável do simbolo '°', para Kelvin, como é 273.15, somei aos graus Celcius e o fahreinheit equivale a 32 para 0 graus celcius, logo, somei aos graus celcius
+    }
+}
+
